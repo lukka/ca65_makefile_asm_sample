@@ -7,11 +7,9 @@
 ### In order to override defaults - values can be assigned to the variables ###
 ###############################################################################
 
-CPU := 6502
-
 # Space or comma separated list of cc65 supported target platforms to build for.
 # Default: c64 (lowercase!)
-TARGETS := c64
+TARGETS :=
 
 # Name of the final, single-file executable.
 # Default: name of the current dir with target name appended
@@ -33,7 +31,7 @@ CFLAGS  = -g
 
 # Additional assembler flags and options.
 # Default: none
-ASFLAGS = --cpu $(CPU) -g
+ASFLAGS = -g
 
 # Additional linker flags and options.
 # Default: none
